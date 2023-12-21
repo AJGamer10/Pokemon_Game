@@ -7,7 +7,7 @@ class DamageCalculator(ABC):
     """Calcula o dano recebido ao pokemon"""
     
     @staticmethod
-    def calcular_dano(atacante_ataque: int, atacante_tipos: List[str], ataque_dano: int, ataque_tipo: str, oponente_tipos: List[str], oponente_defesa: int) -> int:
+    def calcular_dano(atacante_ataque: int, ataque_dano: int, ataque_tipo: str, oponente_tipos: List[str], oponente_defesa: int) -> int:
         """Calcula o dano que o Pokemon receberá.
         
         Args:

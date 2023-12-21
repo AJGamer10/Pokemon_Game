@@ -1,3 +1,6 @@
+from effect import Effect
+
+
 class Attack:
     """Representa um ataque do pokemon.
     
@@ -8,7 +11,7 @@ class Attack:
         tipo (str): Tipo elemental do ataque.
         efeito (str): efeito do ataque.
     """
-    def __init__(self, nome: str, tipo: str, dano: int = 0, efeito: str = None, id: int = None) -> None:
+    def __init__(self, nome: str, tipo: str, dano: int = 0, efeito: Effect = None, id: int = None) -> None:
         self.id = id
         self.nome = nome
         self.tipo = tipo
@@ -26,3 +29,5 @@ class Attack:
             return f"Nome: {self.nome}, Tipo: {self.tipo}, Dano: {self.dano}, Efeito: {self.efeito}"
         else:
             return f"Nome: {self.nome}, Tipo: {self.tipo}, Dano: {self.dano}"
+        
+    
