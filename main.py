@@ -11,7 +11,7 @@ def tocar_musica(arquivo):
     pygame.mixer.music.play()
 
 def parar_musica():
-    pygame.mixer.music.fadeout(700)  # Diminui o volume gradualmente em 700 milissegundos
+    pygame.mixer.music.fadeout(1000)  # Diminui o volume gradualmente em 1000 milissegundos (1 segundo)
 
 
 pygame.init()

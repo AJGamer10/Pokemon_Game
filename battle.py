@@ -35,6 +35,8 @@ class Battle:
                             self.pokemon1.curar(self.pokemon1.hp / 2)
                         else:
                             self.pokemon1.atacar(self.current_atk, self.pokemon2)
+                    else:
+                        self.pokemon1.atacar(self.current_atk, self.pokemon2)
 
                     if self.pokemon2.current_hp <= 0:
                         self.pokemon2.current_hp = 0
@@ -50,6 +52,8 @@ class Battle:
                         self.pokemon1.curar(self.pokemon1.hp / 2)
                     else:
                         self.pokemon1.atacar(self.current_atk, self.pokemon2)
+                else:
+                    self.pokemon1.atacar(self.current_atk, self.pokemon2)
 
                 if self.pokemon2.current_hp <= 0:
                     self.pokemon2.current_hp = 0
@@ -75,6 +79,8 @@ class Battle:
                             self.pokemon2.curar(self.pokemon2.hp / 2)
                         else:
                             self.pokemon2.atacar(ataque_usado, self.pokemon1)
+                    else:
+                        self.pokemon2.atacar(ataque_usado, self.pokemon1)
 
                     if self.pokemon1.current_hp <= 0:
                         self.pokemon1.current_hp = 0
@@ -91,6 +97,8 @@ class Battle:
                         self.pokemon2.curar(self.pokemon2.hp / 2)
                     else:
                         self.pokemon2.atacar(ataque_usado, self.pokemon1)
+                else:
+                    self.pokemon2.atacar(ataque_usado, self.pokemon1)
 
                 if self.pokemon1.current_hp <= 0:
                     self.pokemon1.current_hp = 0

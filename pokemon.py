@@ -39,7 +39,7 @@ class Pokemon:
         return f"{self.nome}, Tipo: {self.tipos}, {self.current_hp}/{self.hp}"
     
     def mostrar_status(self) -> str:
-        return f"{self.nome} - Tipo: {self.tipos} - HP: {self.hp} - Atk: {self.ataque} - Dfe: {self.defesa}"
+        return f"{self.nome} - Tipo: {self.tipos} - HP: {self.current_hp}/{self.hp} - Atk: {self.ataque} - Dfe: {self.defesa}"
 
     def receber_dano(self, dano: int, quem: str) -> None:
         """Ação de receber dano
